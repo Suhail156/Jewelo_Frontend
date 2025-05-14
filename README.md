@@ -63,7 +63,7 @@ A responsive and modern frontend built with **React.js**, styled using **Materia
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/jewellery-frontend.git
+git https://github.com/Suhail156/Jewelo_Frontend.git
 cd jewellery-frontend
 
 Install Dependencies

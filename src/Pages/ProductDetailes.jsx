@@ -51,7 +51,7 @@ const ProductDetails = () => {
     <div className="min-h-screen bg-gray-100 py-10 px-4 flex justify-center">
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
         <img
-          src={`http://localhost:3562/uploads/${product.image}`}
+          src={`https://jewelo-backend.onrender.com/uploads/${product.image}`}
           alt={product.name}
           className="w-full h-80 object-cover"
         />

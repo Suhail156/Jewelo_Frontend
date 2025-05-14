@@ -25,17 +25,17 @@ const Home = () => {
     fetchProducts();
   }, [search, sort, page]);
 
-  const handleDelete = async (id) => {
-    if (!window.confirm('Are you sure you want to delete this product?')) return;
+//   const handleDelete = async (id) => {
+//     if (!window.confirm('Are you sure you want to delete this product?')) return;
 
-    try {
-      await deleteProduct(id);
-      toast.success('Product deleted successfully');
-      fetchProducts();
-    } catch (err) {
-      toast.error('Failed to delete product');
-    }
-  };
+//     try {
+//       await deleteProduct(id);
+//       toast.success('Product deleted successfully');
+//       fetchProducts();
+//     } catch (err) {
+//       toast.error('Failed to delete product');
+//     }
+//   };
   
   return (
     <div className="min-h-screen bg-gray-50 p-6">
@@ -58,7 +58,7 @@ const Home = () => {
         {products.map((product) => (
           <div key={product._id} className="bg-white p-4 rounded shadow">
             <img
-              src={`http://localhost:3562/uploads/${product.image}`}
+              src={`https://jewelo-backend.onrender.com/uploads/${product.image}`}
               alt={product.name}
               className="w-full h-56 object-cover rounded"
             />

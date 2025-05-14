@@ -49,7 +49,7 @@ console.log('Product Image:', product.image);
     <Container maxWidth="sm" className="bg-white p-6 rounded shadow-md">
       <Typography variant="h4" gutterBottom>Edit Product</Typography>
    <img
-  src={`http://localhost:3562/uploads/${product.image}`}
+  src={`https://jewelo-backend.onrender.com/uploads/${product.image}`}
   alt={product.name}
   className="w-full h-48 object-cover"
 />

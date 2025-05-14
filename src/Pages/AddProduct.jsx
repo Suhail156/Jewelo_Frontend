@@ -60,7 +60,7 @@ export default function AddProduct() {
   };
 
   useEffect(() => {
-    const token = localStorage.getItem('token'); // or wherever you store your auth token
+    const token = localStorage.getItem('token'); 
     if (!token) {
       navigate('/login');
     }
